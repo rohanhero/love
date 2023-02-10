@@ -12,10 +12,10 @@ function calculate() {
         clearInput()
         return alert('Plese enter both names')
     }
-    // if (yourNamevalue.toLowerCase() == 'rohan' || theirNamevalue.toLowerCase() == 'ishika') {
-    //     clearInput()
-    //     return output.innerText = "Wow! They are made for eachother"
-    // }
+    if (yourNamevalue.toLowerCase() == 'rohan' && theirNamevalue.toLowerCase() == 'ishika') {
+        clearInput()
+        return output.innerText = "Wow! They are made for eachother"
+    }
     else if (singleGuys.includes(yourNamevalue.toLowerCase()) || singleGuys.includes(theirNamevalue.toLowerCase())) {
         clearInput()
         return output.innerText = "Single"
